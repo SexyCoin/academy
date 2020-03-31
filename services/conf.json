@@ -1,0 +1,19 @@
+{
+    "applications": {
+        "laravelgg": {
+            "type": "php",
+            "user": "www-data",
+            "group": "www-data",
+            "script": "index.php",
+            "root": "/var/www/laravelgg/public",
+            "index": "index.php"
+        }
+    },
+
+    "listeners": {
+        "*:8080": {
+            "pass": "applications/laravelgg"
+        }
+    }
+
+}
